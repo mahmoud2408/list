@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="list.js" defer></script>
+    <title>Playlist</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contenair">
+      <div class="navbar">
+        <img src="logo.png" class="logo" />
+        <ul>
+          <li><a class="bar" href="index.html">Accueil</a></li>
+          <li><a class="bar" href="playlist.html">Playlist</a></li>
+          <li><a class="bar" href="#">Profil</a></li>
+          <li><a class="bar" href="#">Menu</a></li>
+          <li><a class="bar" href="#">A Propos</a></li>
+        </ul>
+      </div>
+      <div class="playlists">
+        <h2>vos playlist</h2>
+        <br />
+        <br />
+        <div id="mod"></div>
+        <ul id="list">
+          <li>
+            <input
+              type="text"
+              name="new"
+              id="task"
+              placeholder="creer une playlist"
+            />
+            <button id="btn">creer</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="songs">
+      <h2>vos chansons</h2>
+      <br />
+      <br />
+      <ul>
+        <li class="son">
+          <audio src="Music.mp3"></audio>son<button id="addPlaylist">
+            son
+          </button>
+        </li>
+        <li class="son">
+          son<button class="addPlaylist"><i>son</i></button>
+        </li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+        <li class="son">son<button class="addPlaylist">son</button></li>
+      </ul>
+    </div>
+    <h2 class="playing">Now playing- <span class="song-name"></span></h2>
+    <div class="controls">
+      <button class="btn previous">
+        <i class="ph-bold ph-skip-back"></i>
+      </button>
+      <button class="btn play-pause">
+        <i id="play-pause-icon" class="ph-bold ph-play"></i>
+      </button>
+      <button class="btn next">
+        <i class="ph-bold ph-skip-forward"></i>
+      </button>
+    </div>
+  </body>
+</html>

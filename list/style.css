@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.contenair {
+  height: 100vh;
+  width: 100%;
+  background-image: url(Bg.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.navbar {
+  width: 88%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 80px;
+  cursor: pointer;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+.navbar ul li a {
+  text-decoration: aliceblue;
+  position: relative;
+  color: aliceblue;
+  font-size: 15px;
+}
+.navbar ul li a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: aliceblue;
+  transition: 0.3s;
+}
+.navbar ul li a:hover::before {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+}
+.left-col {
+  margin-left: 6%;
+}
+.left-col h1 {
+  font-size: 90px;
+  color: aliceblue;
+  line-height: 110px;
+  float: left;
+}
+.right-col {
+  float: right;
+  margin-right: 6%;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+}
+.right-col p {
+  font-size: 18px;
+  color: aliceblue;
+  font-weight: 400;
+  margin-right: 15px;
+}
+#icon {
+  width: 80px;
+  cursor: pointer;
+}
+
+.playlists {
+  color: aliceblue;
+  float: left;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.playlists h2 {
+  font-size: 50px;
+}
+.playlists input {
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: papayawhip;
+}
+
+.playlists #btn {
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  border-color: papayawhip;
+  width: 100px;
+}
+
+.playlists li {
+  font-size: 30px;
+  list-style: none;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  width: 500px;
+  flex: 5 1;
+  gap: 5px;
+  padding-bottom: 5px;
+  justify-content: space-between;
+}
+.playlists li::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: papayawhip;
+  transition: 0.5s;
+}
+.playlists li:hover::before {
+  width: 100%;
+}
+.playlists #delete {
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 5px;
+  border-color: papayawhip;
+}
+
+.delete {
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  border-color: papayawhip;
+  width: 100px;
+}
+.songs {
+  color: aliceblue;
+  float: right;
+  position: absolute;
+  left: 70%;
+  top: 16%;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.songs h2 {
+  font-size: 50px;
+}
+.songs #addPlaylist {
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  border-color: papayawhip;
+  width: 100px;
+}
+
+.songs li {
+  font-size: 30px;
+  list-style: none;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  width: 400px;
+  flex: 5 1;
+  gap: 5px;
+  padding-bottom: 5px;
+  justify-content: space-between;
+}
+.songs li::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: papayawhip;
+  transition: 0.5s;
+}
+.songs li:hover::before {
+  width: 100%;
+}
+
+.btn {
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+.playing {
+  position: absolute;
+  top: 40%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  color: rgb(218, 97, 202);
+}
+.controls {
+  position: absolute;
+  top: 45%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: rgb(255, 0, 212);
+}
+
+.playing {
+  text-align: center;
+}
